@@ -42,7 +42,7 @@ git clone https://github.com/saran21332/ThaibathText.git
 # Enter Project Directory
 
 ```bash
-cd bath_to_text
+cd ThaibathText
 ```
 
 ---
