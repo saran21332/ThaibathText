@@ -1,15 +1,18 @@
 # Thai Baht Text Converter
 
-A simple Go project for converting decimal numbers into Thai Baht text format.
+A Go project for converting decimal numbers into Thai Baht text format.
 
 This project was developed for the Backend Take Home assignment.
 
 ---
 
-## Features
+# Features
 
-- Convert numbers to Thai Baht text
-- Support decimal values using `shopspring/decimal`
+- Convert decimal numbers to Thai Baht text
+- Support Thai currency format:
+  - บาท
+  - สตางค์
+  - ถ้วน
 - Handle Thai language special cases:
   - สิบ
   - ยี่สิบ
@@ -19,16 +22,32 @@ This project was developed for the Backend Take Home assignment.
 
 ---
 
-## Example
+# Example Outputs
 
 | Input | Output |
 |---|---|
 | 1234 | หนึ่งพันสองร้อยสามสิบสี่บาทถ้วน |
 | 33333.75 | สามหมื่นสามพันสามร้อยสามสิบสามบาทเจ็ดสิบห้าสตางค์ |
 | 1000000 | หนึ่งล้านบาทถ้วน |
+| 0.01 | ศูนย์บาทหนึ่งสตางค์ |
 
+---
 
-## Install Dependencies
+# Clone Repository
+
+```bash
+git clone https://github.com/saran21332/ThaibathText.git
+```
+
+# Enter Project Directory
+
+```bash
+cd bath_to_text
+```
+
+---
+
+# Install Dependencies
 
 ```bash
 go mod tidy
@@ -36,23 +55,13 @@ go mod tidy
 
 ---
 
-## Run the Project
+# Run the Project
 
 ```bash
 go run main.go
 ```
 
 ---
-
-## Run Tests
-
-```bash
-go test ./...
-```
-
----
+`
 
 
-## Author
-
-Your Name
